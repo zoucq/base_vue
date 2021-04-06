@@ -1,9 +1,13 @@
 {
     "name": "qm-publish-project",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "private": true,
     "scripts": {
         "build": "node ./build.js"
     },
-    "devDependencies": {}
+    "devDependencies": {},
+    "dependencies": {
+        "inquirer": "^8.0.0",
+        "shelljs": "^0.8.4"
+    }
 }
