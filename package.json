@@ -1,6 +1,6 @@
 {
     "name": "qm-publish-project",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "private": true,
     "scripts": {
         "build": "node ./build.js"
