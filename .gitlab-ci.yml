@@ -76,9 +76,11 @@ build_prod:
 
 # 上传文件前的公共步骤
 .deploy_before_script: &deploy_before_script
-  - cp -f deploy/.cos.conf ~/
+  - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.malmam.com".insteadOf "https://gitlab.malmam.com"
+  - git clone https://gitlab.malmam.com/qm/qm-cdn-tencent.git ./tencent
+  - cp -f tencent/deploy/.cos.conf ~/
   - mkdir -p ~/.ssh || true
-  - cp -f deploy/id_rsa ~/.ssh/
+  - cp -f tencent/deploy/id_rsa ~/.ssh/
   - chmod 600 ~/.ssh/id_rsa
 
 # 测试发布
