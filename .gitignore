@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+/qm-publish-project
 
 # local env files
 .env.local
