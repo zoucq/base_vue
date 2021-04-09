@@ -12,10 +12,10 @@ stages:
 
 variables:
   PROXY: http://192.168.1.77:8123
-  DEV_CDN_PATH: /new_xiangju_ts_dev/dist/ # 测试 cdn 地址
-  PROD_CDN_PATH: /new_xiangju_ts/dist/ # 线上 cdn 地址
-  DEV_INDEX_PATH: /xiangju_new_admin_ts_dev/dist/ # 测试 index.html 上传地址
-  PROD_INDEX_PATH: /new_admin_ts/dist/ # 线上 index.html 上传地址
+  DEV_CDN_PATH: /base_vue_dev/dist/ # 测试 cdn 地址 会被动态替换
+  PROD_CDN_PATH: /base_vue/dist/ # 线上 cdn 地址 会被动态替换
+  DEV_INDEX_PATH: /base_vue_dev/dist/ # 测试 index.html 上传地址 会被动态替换
+  PROD_INDEX_PATH: /base_vue/dist/ # 线上 index.html 上传地址 会被动态替换
 
 before_script:
   - pwd
